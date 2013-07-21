@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NavPage.master.cs" Inherits="NavPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head runat="server">
+    <style type="text/css">
+    body,div,td{font-size:14px;}
+    ul li{margin:5px 0px}
+    </style>
+    <title>AspNetPager，asp.net分页的最终解决方案！</title>
+    <meta name="author" content="webdiyer (www.webdiyer.com)" />
+    <meta name="keywords" content="AspNetPager,分页,asp.net分页,asp.net自定义控件,asp.net免费控件,asp.net开源项目,asp.net free control,asp.net open source project" />
+    <meta name="Description" content="AspNetPager免费分页控件，为asp.net web应用程序提供分页的最终解决方案"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <link rel="stylesheet" type="text/css" href="~/demo.css" />
+    <asp:ContentPlaceHolder runat="server" ID="header"></asp:ContentPlaceHolder>
+</head>
+<body>
+<h2>AspNetPager分页示例</h2>
+    <form id="form1" runat="server">
+    <table width="100%" border="0">    
+    <tr><td style="width:20%;border-right:1px solid #eaeaea;font-size:13px" valign="top">
+    <ul>
+    <li><asp:HyperLink ID="homelink" runat="server" NavigateUrl="~/default.aspx" Text="首页" /></li>
+    <li><asp:HyperLink ID="HyperLink9" runat="server" Text="基本功能" NavigateUrl="basic/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink15" runat="server" Text="分页按钮属性效果" NavigateUrl="NavigationButtons/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink17" runat="server" Text="使用自定义信息区" NavigateUrl="CustomInfoSection/default.aspx" /></li>
+    <li><asp:HyperLink ID="repeaterlink" runat="server" Text="Repeater分页" NavigateUrl="PagedRepeater/default.aspx" /></li>
+    <li><asp:HyperLink ID="dataliselink" runat="server" Text="DataList分页" NavigateUrl="PagedDataList/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink1" runat="server" Text="Url分页" NavigateUrl="urlpaging/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink2" runat="server" Text="使用Url重写技术" NavigateUrl="urlrewriting/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink14" runat="server" Text="Url逆向分页" NavigateUrl="reverseurlpageindex/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink3" runat="server" Text="N层结构应用" NavigateUrl="ntier/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink4" runat="server" Text="使用XML文件数据源" NavigateUrl="xmldata/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink5" runat="server" Text="图片浏览示例" NavigateUrl="photoviewer/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink6" runat="server" Text="使用AccessDataSource" NavigateUrl="accessdatasource/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink10" runat="server" Text="使用SqlDataSource" NavigateUrl="sqldatasource/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink12" runat="server" Text="使用ObjectDataSource" NavigateUrl="objectdatasource/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink7" runat="server" Text="自定义数据呈现逻辑" NavigateUrl="customrendering/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink8" runat="server" Text="使用图片按钮" NavigateUrl="imagebuttons/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink11" runat="server" Text="查询结果分页" NavigateUrl="search/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink16" runat="server" Text="查询结果Url分页" NavigateUrl="UrlSearch/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink20" runat="server" Text="克隆属性及事件" NavigateUrl="clone/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink22" runat="server" Text="页索引输入/选择框" NavigateUrl="pageindexbox/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink21" runat="server" Text="自定义导航按钮" NavigateUrl="buttonsformat/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink19" runat="server" Text="在用户控件中实现分页" NavigateUrl="usercontrol/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink13" runat="server" Text="Asp.net Ajax支持" NavigateUrl="updatepanel/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink18" runat="server" Text="当前页索引按钮位置" NavigateUrl="CurrentPageButtonPosition/default.aspx" /></li>
+    <li><asp:HyperLink ID="hl_layout" runat="server" Text="使用Table布局" NavigateUrl="TableLayout/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink23" runat="server" Text="自定义提交按钮图片" NavigateUrl="SubmitButtonImage/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink24" runat="server" Text="从url中获取每页显示记录数" NavigateUrl="UrlPageSizeName/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink25" runat="server" Text="应用自定义样式" NavigateUrl="ApplyStyles/default.aspx" /></li>
+    <li><asp:Hyperlink runat="server" Text="动态指定当前页" NavigateUrl="GoToPage/default.aspx" /></li>
+    <li><asp:Hyperlink runat="server" Text="分页导航元素布局" NavigateUrl="PagingButtonLayoutType/default.aspx" /></li>
+    </ul></td>
+    <td style="width:80%" valign="top"> <asp:contentplaceholder id="main" runat="server">
+        </asp:contentplaceholder>
+    </td></tr>
+       </table>
+    </form>
+</body>
+</html>

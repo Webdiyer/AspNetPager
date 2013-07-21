@@ -1,0 +1,1 @@
+This is a Visual studio web site project,you can open it by click File->Open->Web site and navigate to this folder and then click OK in Visual Studio.
