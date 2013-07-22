@@ -448,6 +448,7 @@ namespace Wuqi.Webdiyer
                             ubuilder.Append(amp).Append(pName);
                             if (nvArr.Length > 1)
                                 ubuilder.Append("=").Append(nvArr[1]);
+                            amp = "&amp;";
                         }
                     }
                 }
