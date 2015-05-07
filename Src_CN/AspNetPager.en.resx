@@ -355,7 +355,7 @@
     <value>The formatting of the first page url to be rewritten to, using %paramName% to represent the value of url parameter "paramName".</value>
   </data>
   <data name="def_CopyrightText" xml:space="preserve">
-    <value>AspNetPager 7.4.5 Copyright:2003-2013 Webdiyer (en.webdiyer.com)</value>
+    <value>AspNetPager 7.4.6 Copyright:2003-2015 Webdiyer (en.webdiyer.com)</value>
   </data>
   <data name="def_EmptyCloneFrom" xml:space="preserve">
     <value>The property value of CloneFrom cannot be null or empty</value>

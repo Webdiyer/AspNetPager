@@ -209,6 +209,7 @@
     <EmbeddedResource Include="AspNetPager.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="License.txt" />
     <None Include="anp.gif" />
     <EmbeddedResource Include="ANPScript.js" />
     <Content Include="AspNetPager.ico" />

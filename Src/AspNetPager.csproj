@@ -169,10 +169,8 @@
     <EmbeddedResource Include="ANPScript.js" />
     <Content Include="AspNetPager.ico" />
     <Content Include="AspNetPagerDocs.xml" />
-    <None Include="COPYING.LESSER.txt" />
-    <None Include="COPYING.txt" />
+    <None Include="License.txt" />
     <None Include="aspnetpager.snk" />
-    <None Include="Resources\aspnetpager.gif" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

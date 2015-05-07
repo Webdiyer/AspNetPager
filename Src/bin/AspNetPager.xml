@@ -1132,10 +1132,5 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
-        <member name="P:Wuqi.Webdiyer.Properties.Resources.aspnetpager">
-            <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
-            </summary>
-        </member>
     </members>
 </doc>

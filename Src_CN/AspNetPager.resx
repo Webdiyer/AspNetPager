@@ -367,7 +367,7 @@
     <value>首页的Url重写格式</value>
   </data>
   <data name="def_CopyrightText" xml:space="preserve">
-    <value>AspNetPager 7.4.5 Copyright:2003-2013 Webdiyer (www.webdiyer.com)</value>
+    <value>AspNetPager 7.4.6 Copyright:2003-2015 Webdiyer (www.webdiyer.com)</value>
   </data>
   <data name="desc_ReverseUrlPageIndex" xml:space="preserve">
     <value>当启用Url分页方式时，是否以反方向显示分页页索引参数</value>
