@@ -96,6 +96,7 @@ namespace Wuqi.Webdiyer
         None
     }
 
+    /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/Enum[@name="NavigationButtonPosition"]/*'/>
     public enum NavigationButtonPosition:byte
     {
         /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/EnumValue[@name="PLeft"]/*'/>
