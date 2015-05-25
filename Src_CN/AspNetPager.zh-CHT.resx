@@ -313,7 +313,7 @@
     <value>指定頁索引框的顯示類型</value>
   </data>
   <data name="def_CopyrightText" xml:space="preserve">
-    <value>AspNetPager 7.4.6 Copyright:2003-2015 Webdiyer (www.webdiyer.com)</value>
+    <value>AspNetPager 7.5 Copyright:2003-2015 Webdiyer (www.webdiyer.com)</value>
   </data>
   <data name="def_EmptyCloneFrom" xml:space="preserve">
     <value>CloneFrom值不能為空</value>
@@ -371,5 +371,11 @@
   </data>
   <data name="desc_UrlPagingTarget" xml:space="preserve">
     <value>Url分頁時分頁按鈕或超連結指向的目標視窗或框架的名稱</value>
+  </data>
+  <data name="desc_BackImageUrl" xml:space="preserve">
+    <value>AspNetPager分頁控件背景圖像的 URL</value>
+  </data>
+  <data name="desc_HorizontalAlign" xml:space="preserve">
+    <value>分頁按鈕的水平對齊方式</value>
   </data>
 </root>

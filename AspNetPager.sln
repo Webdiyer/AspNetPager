@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPager", "Src\AspNetPager.csproj", "{B1F16029-B778-4A05-9C10-15C779375CD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPager_CN", "Src_CN\AspNetPager_CN.csproj", "{0FAC7937-3CDD-41F6-9DC8-C743C9F727F1}"
@@ -24,6 +26,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo", "Demo\", "{C5C8C7D9-
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "20891"
+		SlnRelativePath = "Demo\"
 	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo_CN", "Demo_CN\", "{A863E12F-B061-4A98-AB64-320C83E15DE7}"
@@ -45,6 +48,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo_CN", "Demo_CN\", "{A86
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "20892"
+		SlnRelativePath = "Demo_CN\"
 	EndProjectSection
 EndProject
 Global

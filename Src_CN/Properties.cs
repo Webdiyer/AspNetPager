@@ -908,8 +908,16 @@ namespace Wuqi.Webdiyer
                 object obj = ViewState["ShowCustomInfoSection"];
                 return (null == obj) ? ShowCustomInfoSection.Never : (ShowCustomInfoSection)obj;
             }
-            set { ViewState["ShowCustomInfoSection"] = value; }
+            set
+            {
+                if (LayoutType == LayoutType.Ul && value != ShowCustomInfoSection.Never)
+                {
+                    throw new NotSupportedException("Can not show custom info section if LayoutType is set to Ul!");
+                }
+                ViewState["ShowCustomInfoSection"] = value;
+            }
         }
+
 
         /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="CustomInfoTextAlign"]/*'/>
         [Browsable(true), Category("Appearance"), DefaultValue(HorizontalAlign.NotSet), ANPDescription("desc_CustomInfoTextAlign")]
@@ -1172,6 +1180,39 @@ namespace Wuqi.Webdiyer
             }
         }
 
+        /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="HorizontalAlign"]/*'/>
+        [Browsable(true), Category("Appearance"), DefaultValue(HorizontalAlign.NotSet), ANPDescription("desc_HorizontalAlign")]
+        public HorizontalAlign HorizontalAlign
+        {
+            get
+            {
+                if (null != cloneFrom)
+                    return cloneFrom.HorizontalAlign;
+                object obj = ViewState["HorizontalAlign"];
+                return (null == obj) ? HorizontalAlign.NotSet : (HorizontalAlign)obj;
+            }
+            set
+            {
+                ViewState["HorizontalAlign"] = value;
+            }
+        }
+
+        /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="BackImageUrl"]/*'/>
+        [Browsable(true), Category("Appearance"), Themeable(true), ANPDescription("desc_BackImageUrl"), DefaultValue(null)]
+        public string BackImageUrl
+        {
+            get
+            {
+                if (null != cloneFrom)
+                    return cloneFrom.BackImageUrl;
+                object obj = ViewState["BackImageUrl"];
+                return (null == obj) ? null : (string)obj;
+            }
+            set
+            {
+                ViewState["BackImageUrl"] = value;
+            }
+        }
         /*
         public string DisabledButtonsClass
         {
@@ -1370,20 +1411,7 @@ namespace Wuqi.Webdiyer
                 ViewState["AlwaysShowFirstLastPageNumber"] = value;
             }
         }
-
-        /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="Wrap"]/*'/>
-        public override bool Wrap
-        {
-            get
-            {
-                return base.Wrap;
-            }
-            set
-            {
-                base.Wrap = false;
-            }
-        }
-
+        
         /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="PageIndexOutOfRangeErrorMessage"]/*'/>
         [Browsable(true), Themeable(true), ANPDescription("desc_PIOutOfRangeMsg"), ANPDefaultValue("def_PIOutOfRangeMsg"), Category("Data")]
         public string PageIndexOutOfRangeErrorMessage

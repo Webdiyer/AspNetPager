@@ -39,8 +39,23 @@ namespace Wuqi.Webdiyer
     [Designer(typeof(PagerDesigner))]
     [ToolboxData("<{0}:AspNetPager runat=server></{0}:AspNetPager>")]
     [System.Drawing.ToolboxBitmap(typeof(AspNetPager), "AspNetPager.bmp")]
-    public partial class AspNetPager : Panel, INamingContainer, IPostBackEventHandler, IPostBackDataHandler
+    public partial class AspNetPager : WebControl, INamingContainer, IPostBackEventHandler, IPostBackDataHandler
     {
+        protected override HtmlTextWriterTag TagKey
+        {
+            get
+            {
+                switch (LayoutType)
+                {
+                    case LayoutType.Table:
+                        return HtmlTextWriterTag.Table;
+                    case LayoutType.Ul:
+                        return HtmlTextWriterTag.Ul;
+                    default:
+                        return HtmlTextWriterTag.Div;
+                }
+            }
+        }
 
         #region Control Rendering Logic
 
@@ -130,6 +145,10 @@ namespace Wuqi.Webdiyer
                 writer.WriteLine("\"></script>");
                 HttpContext.Current.Items[isANPScriptRegistered] = true;
             }
+            if (HorizontalAlign != HorizontalAlign.NotSet)
+                writer.AddStyleAttribute(HtmlTextWriterStyle.TextAlign, HorizontalAlign.ToString().ToLower());
+            if (!string.IsNullOrEmpty(BackImageUrl))
+                writer.AddStyleAttribute(HtmlTextWriterStyle.BackgroundImage, BackImageUrl);
             base.AddAttributesToRender(writer);
         }
 
@@ -174,15 +193,7 @@ namespace Wuqi.Webdiyer
             {
                 if (LayoutType == LayoutType.Table)
                 {
-                    writer.AddAttribute(HtmlTextWriterAttribute.Width, "100%");
-                    writer.AddAttribute(HtmlTextWriterAttribute.Style, Style.Value);
-                    if (Height != Unit.Empty)
-                        writer.AddStyleAttribute(HtmlTextWriterStyle.Height, Height.ToString());
-                    writer.AddAttribute(HtmlTextWriterAttribute.Border, "0");
-                    writer.AddAttribute(HtmlTextWriterAttribute.Cellpadding, "0");
-                    writer.AddAttribute(HtmlTextWriterAttribute.Cellspacing, "0");
-                    writer.RenderBeginTag(HtmlTextWriterTag.Table); //<table>
-                    writer.RenderBeginTag(HtmlTextWriterTag.Tr); //<tr>
+                   writer.RenderBeginTag(HtmlTextWriterTag.Tr); //<tr>
                 }
                 if (ShowCustomInfoSection == ShowCustomInfoSection.Left)
                 {
@@ -197,7 +208,6 @@ namespace Wuqi.Webdiyer
                 if (LayoutType == LayoutType.Table)
                 {
                     writer.RenderEndTag(); //</tr>
-                    writer.RenderEndTag(); //</table>
                 }
             }
             else

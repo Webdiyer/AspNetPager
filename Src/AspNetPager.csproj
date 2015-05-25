@@ -12,7 +12,8 @@
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>AspNetPager</AssemblyName>
-    <AssemblyOriginatorKeyFile>aspnetpager.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -26,7 +27,7 @@
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <OldToolsVersion>3.5</OldToolsVersion>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
@@ -139,11 +140,6 @@
     <Compile Include="Designer\CustomAttributes.cs" />
     <Compile Include="Enumerations.cs" />
     <Compile Include="Designer\PagerDesigner.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AspNetPager.resx">
       <DependentUpon>aspnetpager.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -157,11 +153,6 @@
     <EmbeddedResource Include="Designer\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="AspNetPager.bmp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,7 +161,6 @@
     <Content Include="AspNetPager.ico" />
     <Content Include="AspNetPagerDocs.xml" />
     <None Include="License.txt" />
-    <None Include="aspnetpager.snk" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

@@ -59,7 +59,9 @@ namespace Wuqi.Webdiyer
         /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/EnumValue[@name="Table"]/*'/>
         Table,
         /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/EnumValue[@name="Div"]/*'/>
-        Div
+        Div,
+        /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/EnumValue[@name="Ul"]/*'/>
+        Ul
     }
 
     /// <include file='AspNetPagerDocs.xml' path='AspNetPagerDoc/Enum[@name="PagingButtonPosition"]/*'/>

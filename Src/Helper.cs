@@ -65,16 +65,16 @@ namespace Wuqi.Webdiyer
             writer.AddStyleAttribute(HtmlTextWriterStyle.Width, customUnit);
             if (CustomInfoTextAlign != HorizontalAlign.NotSet)
                 writer.AddAttribute(HtmlTextWriterAttribute.Align, CustomInfoTextAlign.ToString().ToLower());
-            if (LayoutType == LayoutType.Div)
-            {
-                writer.AddStyleAttribute("float", "left");
-                writer.RenderBeginTag(HtmlTextWriterTag.Div);
-            }
-            else
+            if (LayoutType == LayoutType.Table)
             {
                 writer.AddAttribute(HtmlTextWriterAttribute.Valign, "bottom");
                 writer.AddAttribute(HtmlTextWriterAttribute.Nowrap, "true");
                 writer.RenderBeginTag(HtmlTextWriterTag.Td);
+            }
+            else
+            {
+                writer.AddStyleAttribute("float", "left");
+                writer.RenderBeginTag(HtmlTextWriterTag.Div);
             }
             writer.Write(GetCustomInfoHtml(CustomInfoHTML));
             writer.RenderEndTag();
@@ -91,16 +91,16 @@ namespace Wuqi.Webdiyer
                 writer.AddAttribute(HtmlTextWriterAttribute.Align, HorizontalAlign.ToString().ToLower());
             if (!string.IsNullOrEmpty(CssClass))
                 writer.AddAttribute(HtmlTextWriterAttribute.Class, CssClass);
-            if (LayoutType == LayoutType.Div)
-            {
-                writer.AddStyleAttribute("float", "left");
-                writer.RenderBeginTag(HtmlTextWriterTag.Div); //<div>
-            }
-            else
+            if (LayoutType == LayoutType.Table)
             {
                 writer.AddAttribute(HtmlTextWriterAttribute.Valign, "bottom");
                 writer.AddAttribute(HtmlTextWriterAttribute.Nowrap, "true");
                 writer.RenderBeginTag(HtmlTextWriterTag.Td); //<td>
+            }
+            else
+            {
+                writer.AddStyleAttribute("float", "left");
+                writer.RenderBeginTag(HtmlTextWriterTag.Div); //<div>
             }
             RenderPagingElements(writer);
             writer.RenderEndTag(); //</div> or </td>
@@ -138,10 +138,7 @@ namespace Wuqi.Webdiyer
             int endIndex = ((startIndex + NumericButtonCount) > PageCount)
                                ? PageCount
                                : (startIndex + NumericButtonCount);
-
-            if (PagingButtonLayoutType == PagingButtonLayoutType.UnorderedList)
-                writer.RenderBeginTag(HtmlTextWriterTag.Ul); //<ul>
-
+            
             if (NavigationButtonsPosition == NavigationButtonPosition.Left ||
                 NavigationButtonsPosition == NavigationButtonPosition.BothSides)
             {
@@ -183,9 +180,6 @@ namespace Wuqi.Webdiyer
                 CreateNavigationButton(writer, NavigationButton.Next);
                 CreateNavigationButton(writer, NavigationButton.Last);
             }
-
-            if (PagingButtonLayoutType == PagingButtonLayoutType.UnorderedList)
-                writer.RenderEndTag(); //</ul>
 
 
             if ((ShowPageIndexBox == ShowPageIndexBox.Always) ||
@@ -628,15 +622,6 @@ namespace Wuqi.Webdiyer
                 writer.RenderEndTag(); //</li> or </span>
         }
 
-        /// <summary>
-        /// Write css class name.
-        /// </summary>
-        /// <param name="writer">A <see cref="System.Web.UI.HtmlTextWriter"/> that represents the output stream to render HTML content on the client. </param>
-        //private void WriteCssClass(HtmlTextWriter writer)
-        //{
-        //    if (cssClassName != null && cssClassName.Trim().Length > 0)
-        //        writer.AddAttribute(HtmlTextWriterAttribute.Class, cssClassName);
-        //}
 
         /// <summary>
         /// Add tool tip text to navigation button.

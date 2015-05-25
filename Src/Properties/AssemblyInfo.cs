@@ -13,7 +13,7 @@ using System.Security;
 [assembly: AssemblyTrademark("Webdiyer")]
 [assembly: AssemblyCulture("")]		
 [assembly: TagPrefix("Wuqi.Webdiyer","webdiyer")]
-[assembly: AssemblyVersion("7.4.6")]
+[assembly: AssemblyVersion("7.5")]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyName("")]
 [assembly: AllowPartiallyTrustedCallers()]

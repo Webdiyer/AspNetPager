@@ -920,6 +920,16 @@ end
       若未设置该值，则使用 <see cref="P:Wuqi.Webdiyer.AspNetPager.PagingButtonsStyle"/> 中设置的属性值。
     </remarks>
         </member>
+        <member name="P:Wuqi.Webdiyer.AspNetPager.HorizontalAlign">
+            <summary>
+      获取或设置分页按钮的水平对齐方式。
+    </summary>
+        </member>
+        <member name="P:Wuqi.Webdiyer.AspNetPager.BackImageUrl">
+            <summary>
+      获取或设置AspNetPager分页控件背景图像的 URL。
+    </summary>
+        </member>
         <member name="P:Wuqi.Webdiyer.AspNetPager.CloneFrom">
             <summary>
       获取或设置要克隆属性值及事件处理程序的另一个 AspNetPager 的ID。
@@ -1062,15 +1072,6 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
             <summary>
       获取或设置一个值，该值指定是否总是显示第一页和最后一页数字页索引按钮。
     </summary>
-        </member>
-        <member name="P:Wuqi.Webdiyer.AspNetPager.Wrap">
-            <summary>
-      获取或设置一个值，该值批示是否允许控件中的内容换行。
-    </summary><remarks>
-      <note>
-        AspNetPager 控件重写该属性，不允许内容换行。
-      </note>
-    </remarks>
         </member>
         <member name="P:Wuqi.Webdiyer.AspNetPager.PageIndexOutOfRangeErrorMessage">
             <summary>
@@ -1233,6 +1234,11 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
       使用Div布局方式。
     </summary>
         </member>
+        <member name="F:Wuqi.Webdiyer.LayoutType.Ul">
+            <summary>
+      使用Ul布局方式。
+    </summary>
+        </member>
         <member name="T:Wuqi.Webdiyer.PagingButtonPosition">
             <summary>
       指定当前页数字索引按钮在所有数字页索引按钮中的位置。
@@ -1276,6 +1282,11 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
         <member name="F:Wuqi.Webdiyer.PagingButtonLayoutType.None">
             <summary>
       不设置，使用默认布局。
+    </summary>
+        </member>
+        <member name="T:Wuqi.Webdiyer.NavigationButtonPosition">
+            <summary>
+      指定分页元素（数字页索引、上页、下页、首页和尾页）的位置。
     </summary>
         </member>
         <member name="F:Wuqi.Webdiyer.NavigationButtonPosition.Left">

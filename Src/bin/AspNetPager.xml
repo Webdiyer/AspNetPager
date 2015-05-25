@@ -530,7 +530,7 @@ end
         </member>
         <member name="P:Wuqi.Webdiyer.AspNetPager.ShowPageIndex">
             <summary>
-      Gets or sets a value indicating whether the page index box is displayed.
+      Gets or sets a value indicating whether the page index numeric buttons are displayed.
     </summary>
         </member>
         <member name="P:Wuqi.Webdiyer.AspNetPager.ShowMoreButtons">
@@ -819,6 +819,16 @@ end
       Gets or sets the css styles to be applied to the more... paging button.
     </summary>
         </member>
+        <member name="P:Wuqi.Webdiyer.AspNetPager.HorizontalAlign">
+            <summary>
+      Gets or sets the horizontal alignment of the paging buttons within the AspNetPager control.
+    </summary>
+        </member>
+        <member name="P:Wuqi.Webdiyer.AspNetPager.BackImageUrl">
+            <summary>
+      Gets or sets the URL of the background image for the AspNetPager control.
+    </summary>
+        </member>
         <member name="P:Wuqi.Webdiyer.AspNetPager.CloneFrom">
             <summary>
       Gets or sets the AspNetPager control id that need to be cloned to the current AspNetPager.
@@ -869,15 +879,6 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
             <summary>
       Gets or sets a value indicating whether the first and last numeric paging buttons are always shown.
     </summary>
-        </member>
-        <member name="P:Wuqi.Webdiyer.AspNetPager.Wrap">
-            <summary>
-      Gets or sets a value indicating whether the content wraps within the AspNetPager.
-    </summary><remarks>
-      <note>
-        This property is overwritten to false in AspNetPager control and is not allowed to change.
-      </note>
-    </remarks>
         </member>
         <member name="P:Wuqi.Webdiyer.AspNetPager.PageIndexOutOfRangeErrorMessage">
             <summary>
@@ -1017,12 +1018,17 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
         </member>
         <member name="F:Wuqi.Webdiyer.LayoutType.Table">
             <summary>
-      Using table layout.
+      Using table as container tag.
     </summary>
         </member>
         <member name="F:Wuqi.Webdiyer.LayoutType.Div">
             <summary>
-      Using div layout.
+      Using div as container tag.
+    </summary>
+        </member>
+        <member name="F:Wuqi.Webdiyer.LayoutType.Ul">
+            <summary>
+      Using ul as container tag.
     </summary>
         </member>
         <member name="T:Wuqi.Webdiyer.PagingButtonPosition">
@@ -1070,6 +1076,11 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
       Not set, uses default layout type.
     </summary>
         </member>
+        <member name="T:Wuqi.Webdiyer.NavigationButtonPosition">
+            <summary>
+      Specifies the position of the navigation buttons.
+    </summary>
+        </member>
         <member name="F:Wuqi.Webdiyer.NavigationButtonPosition.Left">
             <summary>
       First,Prev,Next and Last navigation buttons are displayed on the left side of the paging elements.
@@ -1115,22 +1126,6 @@ OnPageChanged="AspNetPager1_PageChanged"></webdiyer:aspnetpager>
             Constructor
             </summary>
             <param name="component"></param>
-        </member>
-        <member name="T:Wuqi.Webdiyer.Properties.Resources">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Wuqi.Webdiyer.Properties.Resources.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Wuqi.Webdiyer.Properties.Resources.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
         </member>
     </members>
 </doc>
