@@ -31,14 +31,14 @@ namespace Wuqi.Webdiyer
     {
         #region Private Helper Functions
 
-        static void addMoreListItem(HtmlTextWriter writer, int pageIndex)
+        static void AddMoreListItem(HtmlTextWriter writer, int pageIndex)
         {
             writer.Write("<option value=\"");
             writer.Write(pageIndex);
             writer.Write("\">......</option>");
         }
 
-        void listPageIndices(HtmlTextWriter writer, int startIndex, int endIndex)
+        void ListPageIndices(HtmlTextWriter writer, int startIndex, int endIndex)
         {
             for (int i = startIndex; i <= endIndex; i++)
             {
@@ -261,27 +261,27 @@ namespace Wuqi.Webdiyer
                     {
                         if (CurrentPageIndex <= 15)
                         {
-                            listPageIndices(writer, 1, 15);
-                            addMoreListItem(writer, 16);
-                            listPageIndices(writer, PageCount - 4, PageCount);
+                            ListPageIndices(writer, 1, 15);
+                            AddMoreListItem(writer, 16);
+                            ListPageIndices(writer, PageCount - 4, PageCount);
                         }
                         else if (CurrentPageIndex >= PageCount - 14)
                         {
-                            listPageIndices(writer, 1, 5);
-                            addMoreListItem(writer, PageCount - 15);
-                            listPageIndices(writer, PageCount - 14, PageCount);
+                            ListPageIndices(writer, 1, 5);
+                            AddMoreListItem(writer, PageCount - 15);
+                            ListPageIndices(writer, PageCount - 14, PageCount);
                         }
                         else
                         {
-                            listPageIndices(writer, 1, 5);
-                            addMoreListItem(writer, CurrentPageIndex - 6);
-                            listPageIndices(writer, CurrentPageIndex - 5, CurrentPageIndex + 5);
-                            addMoreListItem(writer, CurrentPageIndex + 6);
-                            listPageIndices(writer, PageCount - 4, PageCount);
+                            ListPageIndices(writer, 1, 5);
+                            AddMoreListItem(writer, CurrentPageIndex - 6);
+                            ListPageIndices(writer, CurrentPageIndex - 5, CurrentPageIndex + 5);
+                            AddMoreListItem(writer, CurrentPageIndex + 6);
+                            ListPageIndices(writer, PageCount - 4, PageCount);
                         }
                     }
                     else //list all page indices
-                        listPageIndices(writer, 1, PageCount);
+                        ListPageIndices(writer, 1, PageCount);
                     writer.RenderEndTag();
                     if (!string.IsNullOrEmpty(TextAfterPageIndexBox))
                         writer.Write(TextAfterPageIndexBox);

@@ -1,4 +1,4 @@
-ï»¿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NavPage.master.cs" Inherits="NavPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NavPage.master.cs" Inherits="NavPage" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,52 +9,53 @@
     body,div,td{font-size:14px;}
     ul li{margin:5px 0px}
     </style>
-    <title>AspNetPagerï¼Œasp.netåˆ†é¡µçš„æœ€ç»ˆè§£å†³æ–¹æ¡ˆï¼</title>
+    <title>AspNetPager£¬asp.net·ÖÒ³µÄ×îÖÕ½â¾ö·½°¸£¡</title>
     <meta name="author" content="webdiyer (www.webdiyer.com)" />
-    <meta name="keywords" content="AspNetPager,åˆ†é¡µ,asp.netåˆ†é¡µ,asp.netè‡ªå®šä¹‰æ§ä»¶,asp.netå…è´¹æ§ä»¶,asp.netå¼€æºé¡¹ç›®,asp.net free control,asp.net open source project" />
-    <meta name="Description" content="AspNetPagerå…è´¹åˆ†é¡µæ§ä»¶ï¼Œä¸ºasp.net webåº”ç”¨ç¨‹åºæä¾›åˆ†é¡µçš„æœ€ç»ˆè§£å†³æ–¹æ¡ˆ"/>
+    <meta name="keywords" content="AspNetPager,·ÖÒ³,asp.net·ÖÒ³,asp.net×Ô¶¨Òå¿Ø¼ş,asp.netÃâ·Ñ¿Ø¼ş,asp.net¿ªÔ´ÏîÄ¿,asp.net free control,asp.net open source project" />
+    <meta name="Description" content="AspNetPagerÃâ·Ñ·ÖÒ³¿Ø¼ş£¬Îªasp.net webÓ¦ÓÃ³ÌĞòÌá¹©·ÖÒ³µÄ×îÖÕ½â¾ö·½°¸"/>
     <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
     <meta http-equiv="Content-Language" content="zh-CN" />
-    <link rel="stylesheet" type="text/css" href="~/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/content/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css"/>
     <asp:ContentPlaceHolder runat="server" ID="header"></asp:ContentPlaceHolder>
 </head>
 <body>
-<h2>AspNetPageråˆ†é¡µç¤ºä¾‹</h2>
+<h2>AspNetPager·ÖÒ³Ê¾Àı</h2>
     <form id="form1" runat="server">
     <table width="100%" border="0">    
     <tr><td style="width:20%;border-right:1px solid #eaeaea;font-size:13px" valign="top">
     <ul>
-    <li><asp:HyperLink ID="homelink" runat="server" NavigateUrl="~/default.aspx" Text="é¦–é¡µ" /></li>
-    <li><asp:HyperLink ID="HyperLink9" runat="server" Text="åŸºæœ¬åŠŸèƒ½" NavigateUrl="basic/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink15" runat="server" Text="åˆ†é¡µæŒ‰é’®å±æ€§æ•ˆæœ" NavigateUrl="NavigationButtons/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink17" runat="server" Text="ä½¿ç”¨è‡ªå®šä¹‰ä¿¡æ¯åŒº" NavigateUrl="CustomInfoSection/default.aspx" /></li>
-    <li><asp:HyperLink ID="repeaterlink" runat="server" Text="Repeateråˆ†é¡µ" NavigateUrl="PagedRepeater/default.aspx" /></li>
-    <li><asp:HyperLink ID="dataliselink" runat="server" Text="DataListåˆ†é¡µ" NavigateUrl="PagedDataList/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink1" runat="server" Text="Urlåˆ†é¡µ" NavigateUrl="urlpaging/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink2" runat="server" Text="ä½¿ç”¨Urlé‡å†™æŠ€æœ¯" NavigateUrl="urlrewriting/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink14" runat="server" Text="Urlé€†å‘åˆ†é¡µ" NavigateUrl="reverseurlpageindex/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink3" runat="server" Text="Nå±‚ç»“æ„åº”ç”¨" NavigateUrl="ntier/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink4" runat="server" Text="ä½¿ç”¨XMLæ–‡ä»¶æ•°æ®æº" NavigateUrl="xmldata/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink5" runat="server" Text="å›¾ç‰‡æµè§ˆç¤ºä¾‹" NavigateUrl="photoviewer/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink6" runat="server" Text="ä½¿ç”¨AccessDataSource" NavigateUrl="accessdatasource/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink10" runat="server" Text="ä½¿ç”¨SqlDataSource" NavigateUrl="sqldatasource/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink12" runat="server" Text="ä½¿ç”¨ObjectDataSource" NavigateUrl="objectdatasource/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink7" runat="server" Text="è‡ªå®šä¹‰æ•°æ®å‘ˆç°é€»è¾‘" NavigateUrl="customrendering/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink8" runat="server" Text="ä½¿ç”¨å›¾ç‰‡æŒ‰é’®" NavigateUrl="imagebuttons/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink11" runat="server" Text="æŸ¥è¯¢ç»“æœåˆ†é¡µ" NavigateUrl="search/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink16" runat="server" Text="æŸ¥è¯¢ç»“æœUrlåˆ†é¡µ" NavigateUrl="UrlSearch/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink20" runat="server" Text="å…‹éš†å±æ€§åŠäº‹ä»¶" NavigateUrl="clone/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink22" runat="server" Text="é¡µç´¢å¼•è¾“å…¥/é€‰æ‹©æ¡†" NavigateUrl="pageindexbox/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink21" runat="server" Text="è‡ªå®šä¹‰å¯¼èˆªæŒ‰é’®" NavigateUrl="buttonsformat/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink19" runat="server" Text="åœ¨ç”¨æˆ·æ§ä»¶ä¸­å®ç°åˆ†é¡µ" NavigateUrl="usercontrol/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink13" runat="server" Text="Asp.net Ajaxæ”¯æŒ" NavigateUrl="updatepanel/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink18" runat="server" Text="å½“å‰é¡µç´¢å¼•æŒ‰é’®ä½ç½®" NavigateUrl="CurrentPageButtonPosition/default.aspx" /></li>
-    <li><asp:HyperLink ID="hl_layout" runat="server" Text="ä½¿ç”¨Tableå¸ƒå±€" NavigateUrl="TableLayout/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink23" runat="server" Text="è‡ªå®šä¹‰æäº¤æŒ‰é’®å›¾ç‰‡" NavigateUrl="SubmitButtonImage/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink24" runat="server" Text="ä»urlä¸­è·å–æ¯é¡µæ˜¾ç¤ºè®°å½•æ•°" NavigateUrl="UrlPageSizeName/default.aspx" /></li>
-    <li><asp:HyperLink ID="HyperLink25" runat="server" Text="åº”ç”¨è‡ªå®šä¹‰æ ·å¼" NavigateUrl="ApplyStyles/default.aspx" /></li>
-    <li><asp:Hyperlink runat="server" Text="åŠ¨æ€æŒ‡å®šå½“å‰é¡µ" NavigateUrl="GoToPage/default.aspx" /></li>
-    <li><asp:Hyperlink runat="server" Text="åˆ†é¡µå¯¼èˆªå…ƒç´ å¸ƒå±€" NavigateUrl="PagingButtonLayoutType/default.aspx" /></li>
+    <li><asp:HyperLink ID="homelink" runat="server" NavigateUrl="~/default.aspx" Text="Ê×Ò³" /></li>
+    <li><asp:HyperLink ID="HyperLink9" runat="server" Text="»ù±¾¹¦ÄÜ" NavigateUrl="basic/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink15" runat="server" Text="·ÖÒ³°´Å¥ÊôĞÔĞ§¹û" NavigateUrl="NavigationButtons/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink17" runat="server" Text="Ê¹ÓÃ×Ô¶¨ÒåĞÅÏ¢Çø" NavigateUrl="CustomInfoSection/default.aspx" /></li>
+    <li><asp:HyperLink ID="repeaterlink" runat="server" Text="Repeater·ÖÒ³" NavigateUrl="PagedRepeater/default.aspx" /></li>
+    <li><asp:HyperLink ID="dataliselink" runat="server" Text="DataList·ÖÒ³" NavigateUrl="PagedDataList/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink1" runat="server" Text="Url·ÖÒ³" NavigateUrl="urlpaging/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink2" runat="server" Text="Ê¹ÓÃUrlÖØĞ´¼¼Êõ" NavigateUrl="urlrewriting/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink14" runat="server" Text="UrlÄæÏò·ÖÒ³" NavigateUrl="reverseurlpageindex/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink3" runat="server" Text="N²ã½á¹¹Ó¦ÓÃ" NavigateUrl="ntier/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink4" runat="server" Text="Ê¹ÓÃXMLÎÄ¼şÊı¾İÔ´" NavigateUrl="xmldata/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink5" runat="server" Text="Í¼Æ¬ä¯ÀÀÊ¾Àı" NavigateUrl="photoviewer/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink6" runat="server" Text="Ê¹ÓÃAccessDataSource" NavigateUrl="accessdatasource/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink10" runat="server" Text="Ê¹ÓÃSqlDataSource" NavigateUrl="sqldatasource/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink12" runat="server" Text="Ê¹ÓÃObjectDataSource" NavigateUrl="objectdatasource/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink7" runat="server" Text="×Ô¶¨ÒåÊı¾İ³ÊÏÖÂß¼­" NavigateUrl="customrendering/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink8" runat="server" Text="Ê¹ÓÃÍ¼Æ¬°´Å¥" NavigateUrl="imagebuttons/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink11" runat="server" Text="²éÑ¯½á¹û·ÖÒ³" NavigateUrl="search/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink16" runat="server" Text="²éÑ¯½á¹ûUrl·ÖÒ³" NavigateUrl="UrlSearch/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink20" runat="server" Text="¿ËÂ¡ÊôĞÔ¼°ÊÂ¼ş" NavigateUrl="clone/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink22" runat="server" Text="Ò³Ë÷ÒıÊäÈë/Ñ¡Ôñ¿ò" NavigateUrl="pageindexbox/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink21" runat="server" Text="×Ô¶¨Òåµ¼º½°´Å¥" NavigateUrl="buttonsformat/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink19" runat="server" Text="ÔÚÓÃ»§¿Ø¼şÖĞÊµÏÖ·ÖÒ³" NavigateUrl="usercontrol/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink13" runat="server" Text="Asp.net AjaxÖ§³Ö" NavigateUrl="updatepanel/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink18" runat="server" Text="µ±Ç°Ò³Ë÷Òı°´Å¥Î»ÖÃ" NavigateUrl="CurrentPageButtonPosition/default.aspx" /></li>
+    <li><asp:HyperLink ID="hl_layout" runat="server" Text="Ê¹ÓÃTable²¼¾Ö" NavigateUrl="TableLayout/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink23" runat="server" Text="×Ô¶¨ÒåÌá½»°´Å¥Í¼Æ¬" NavigateUrl="SubmitButtonImage/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink24" runat="server" Text="´ÓurlÖĞ»ñÈ¡Ã¿Ò³ÏÔÊ¾¼ÇÂ¼Êı" NavigateUrl="UrlPageSizeName/default.aspx" /></li>
+    <li><asp:HyperLink ID="HyperLink25" runat="server" Text="Ó¦ÓÃ×Ô¶¨ÒåÑùÊ½" NavigateUrl="ApplyStyles/default.aspx" /></li>
+    <li><asp:Hyperlink runat="server" Text="¶¯Ì¬Ö¸¶¨µ±Ç°Ò³" NavigateUrl="GoToPage/default.aspx" /></li>
+    <li><asp:Hyperlink runat="server" Text="·ÖÒ³µ¼º½ÔªËØ²¼¾Ö" NavigateUrl="PagingButtonLayoutType/default.aspx" /></li>
     </ul></td>
     <td style="width:80%" valign="top"> <asp:contentplaceholder id="main" runat="server">
         </asp:contentplaceholder>

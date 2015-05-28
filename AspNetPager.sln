@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPager", "Src\AspNetPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPager_CN", "Src_CN\AspNetPager_CN.csproj", "{0FAC7937-3CDD-41F6-9DC8-C743C9F727F1}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo", "Demo\", "{C5C8C7D9-804A-4EDF-9379-61B67FCC6531}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo(2)", "Demo\", "{C5C8C7D9-804A-4EDF-9379-61B67FCC6531}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		ProjectReferences = "{b1f16029-b778-4a05-9c10-15c779375cd4}|AspNetPager.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Demo"
 		Debug.AspNetCompiler.PhysicalPath = "Demo\"

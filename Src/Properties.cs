@@ -88,7 +88,7 @@ namespace Wuqi.Webdiyer
                 ViewState["NvToolTipFormatString"] = tip;
             }
         }
-
+        
         /// <include file='AspnetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="NumericButtonTextFormatString"]/*'/>
         [Browsable(true), Themeable(true), DefaultValue(""), ANPCategory("cat_Navigation"), ANPDescription("desc_NBTFormatString")]
         public string NumericButtonTextFormatString
@@ -411,6 +411,94 @@ namespace Wuqi.Webdiyer
             }
         }
 
+        #endregion
+
+        #region Page item templates
+
+        ///// <include file='AspnetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="PagerItemTemplate"]/*'/>
+        //[Browsable(true), Themeable(true), DefaultValue(null), ANPCategory("cat_Navigation"), ANPDescription("desc_PagerItemTemplate")]
+        //public string PagerItemTemplate
+        //{
+        //    get
+        //    {
+        //        if (null != cloneFrom)
+        //            return cloneFrom.PagerItemTemplate;
+        //        object obj = ViewState["PagerItemTemplate"];
+        //        return (obj == null) ? String.Empty : (string)obj;
+        //    }
+        //    set
+        //    {
+        //        ViewState["PagerItemTemplate"] = value;
+        //    }
+        //}
+
+        ///// <include file='AspnetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="NumericPagerItemTemplate"]/*'/>
+        //[Browsable(true), Themeable(true), DefaultValue(null), ANPCategory("cat_Navigation"), ANPDescription("desc_NumericPagerItemTemplate")]
+        //public string NumericPagerItemTemplate
+        //{
+        //    get
+        //    {
+        //        if (null != cloneFrom)
+        //            return cloneFrom.NumericPagerItemTemplate;
+        //        object obj = ViewState["NumericPagerItemTemplate"];
+        //        return (obj == null) ? PagerItemTemplate : (string)obj;
+        //    }
+        //    set
+        //    {
+        //        ViewState["NumericPagerItemTemplate"] = value;
+        //    }
+        //}
+
+        ///// <include file='AspnetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="NavigationPagerItemTemplate"]/*'/>
+        //[Browsable(true), Themeable(true), DefaultValue(null), ANPCategory("cat_Navigation"), ANPDescription("desc_NavigationPagerItemTemplate")]
+        //public string NavigationPagerItemTemplate
+        //{
+        //    get
+        //    {
+        //        if (null != cloneFrom)
+        //            return cloneFrom.NavigationPagerItemTemplate;
+        //        object obj = ViewState["NavigationPagerItemTemplate"];
+        //        return (obj == null) ? PagerItemTemplate : (string)obj;
+        //    }
+        //    set
+        //    {
+        //        ViewState["DisabledPagerItemTemplate"] = value;
+        //    }
+        //}
+
+        ///// <include file='AspnetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="DisabledPagerItemTemplate"]/*'/>
+        //[Browsable(true), Themeable(true), DefaultValue(null), ANPCategory("cat_Navigation"), ANPDescription("desc_DisabledPagerItemTemplate")]
+        //public string DisabledPagerItemTemplate
+        //{
+        //    get
+        //    {
+        //        if (null != cloneFrom)
+        //            return cloneFrom.DisabledPagerItemTemplate;
+        //        object obj = ViewState["DisabledPagerItemTemplate"];
+        //        return (obj == null) ? NavigationPagerItemTemplate : (string)obj;
+        //    }
+        //    set
+        //    {
+        //        ViewState["DisabledPagerItemTemplate"] = value;
+        //    }
+        //}
+
+        ///// <include file='AspnetPagerDocs.xml' path='AspNetPagerDoc/Property[@name="CurrentPagerItemTemplate"]/*'/>
+        //[Browsable(true), Themeable(true), DefaultValue(null), ANPCategory("cat_Navigation"), ANPDescription("desc_CurrentPagerItemTemplate")]
+        //public string CurrentPagerItemTemplate
+        //{
+        //    get
+        //    {
+        //        if (null != cloneFrom)
+        //            return cloneFrom.CurrentPagerItemTemplate;
+        //        object obj = ViewState["CurrentPagerItemTemplate"];
+        //        return (obj == null) ? NumericPagerItemTemplate : (string)obj;
+        //    }
+        //    set
+        //    {
+        //        ViewState["CurrentPagerItemTemplate"] = value;
+        //    }
+        //}
         #endregion
 
         #region Image Navigation Buttons

@@ -15,6 +15,6 @@
 </ItemTemplate>
         </asp:DataList>
         <webdiyer:aspnetpager id="AspNetPager1" runat="server" horizontalalign="Center" width="100%" ShowPageIndexBox="Always"
-        EnableUrlRewriting="true" UrlRewritePattern="../UrlÖØÐ´/µÚ{0}Ò³.aspx" OnPageChanged="AspNetPager1_PageChanged" NumericButtonTextFormatString="-{0}-"></webdiyer:aspnetpager>
+        EnableUrlRewriting="true" UrlRewritePattern="../urlrewriting/pager_{0}.aspx" FirstPageUrlRewritePattern="../urlrewriting/default.aspx" OnPageChanged="AspNetPager1_PageChanged" NumericButtonTextFormatString="-{0}-"></webdiyer:aspnetpager>
     
 </asp:Content>
