@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPager", "Src\AspNetPager.csproj", "{B1F16029-B778-4A05-9C10-15C779375CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPager_CN", "Src_CN\AspNetPager_CN.csproj", "{0FAC7937-3CDD-41F6-9DC8-C743C9F727F1}"
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo(2)", "Demo\", "{C5C8C7D9-804A-4EDF-9379-61B67FCC6531}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
@@ -29,28 +27,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo(2)", "Demo\", "{C5C8C7
 		SlnRelativePath = "Demo\"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo_CN", "Demo_CN\", "{A863E12F-B061-4A98-AB64-320C83E15DE7}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		ProjectReferences = "{0fac7937-3cdd-41f6-9dc8-c743c9f727f1}|AspNetPager.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/Demo_CN"
-		Debug.AspNetCompiler.PhysicalPath = "Demo_CN\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Demo_CN\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/Demo_CN"
-		Release.AspNetCompiler.PhysicalPath = "Demo_CN\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Demo_CN\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "20892"
-		SlnRelativePath = "Demo_CN\"
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,18 +37,10 @@ Global
 		{B1F16029-B778-4A05-9C10-15C779375CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1F16029-B778-4A05-9C10-15C779375CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1F16029-B778-4A05-9C10-15C779375CD4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0FAC7937-3CDD-41F6-9DC8-C743C9F727F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FAC7937-3CDD-41F6-9DC8-C743C9F727F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FAC7937-3CDD-41F6-9DC8-C743C9F727F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FAC7937-3CDD-41F6-9DC8-C743C9F727F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5C8C7D9-804A-4EDF-9379-61B67FCC6531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5C8C7D9-804A-4EDF-9379-61B67FCC6531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C8C7D9-804A-4EDF-9379-61B67FCC6531}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5C8C7D9-804A-4EDF-9379-61B67FCC6531}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{A863E12F-B061-4A98-AB64-320C83E15DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A863E12F-B061-4A98-AB64-320C83E15DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A863E12F-B061-4A98-AB64-320C83E15DE7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{A863E12F-B061-4A98-AB64-320C83E15DE7}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
