@@ -1,6 +1,6 @@
 <%@ Page Language="C#" MasterPageFile="AspNetPager.master" MetaDescription="This sample demonstrate how to use CloneFrom property to clone properties and event handlers of AspNetPager control." AutoEventWireup="true" CodeFile="Clone.aspx.cs" Inherits="Clone_Default"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="main" Runat="Server">
-    <div>Code: <font color="red"><b>CloneFrom="ID of AspNetPager control you want to clone"</b></font>
+    <div>Code: <b>CloneFrom="ID of AspNetPager control you want to clone"</b>
     </div><br />
         
         <webdiyer:aspnetpager id="AspNetPager1" runat="server" horizontalalign="Center" PagingButtonSpacing="8px" onpagechanged="AspNetPager1_PageChanged"

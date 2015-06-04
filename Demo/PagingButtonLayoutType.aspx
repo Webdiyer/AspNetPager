@@ -1,10 +1,5 @@
 <%@ Page Title="" Language="C#" MasterPageFile="AspNetPager.master" AutoEventWireup="true"  MetaDescription="This sample demonstrate how to set PagingButtonLayoutType property to wrap paging element in span or li tags in order to apply css styles." CodeFile="PagingButtonLayoutType.aspx.cs" Inherits="PagingButtonLayoutType_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="header" Runat="Server">
-<style type="text/css">
-.code{color:Blue;font-weight:bold}
-</style>
-</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" Runat="Server">
 
  <h4>PagingButtonLayoutType=PagingButtonLayoutType.None(default):</h4>

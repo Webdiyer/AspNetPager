@@ -1,6 +1,6 @@
-﻿<%@ Page Title="AspNetPager samples - Url page size name" Language="C#" MasterPageFile="AspNetPager.master" AutoEventWireup="true"  MetaDescription="This sample demonstrate how to enable url paging and specify page size in the url." CodeFile="UrlPageSizeName.aspx.cs" Inherits="UrlPageSizeName_Default" %>
+﻿<%@ Page Title="AspNetPager samples - Url page size name" Language="C#" MasterPageFile="AspNetPager.master" AutoEventWireup="true"  MetaDescription="This sample demonstrate how to enable url paging and specifies page size in the url." CodeFile="UrlPageSizeName.aspx.cs" Inherits="UrlPageSizeName_Default" %>
 
-<asp:Content runat="server" ContentPlaceHolderID="desc">Properties and values to be set:<font color="red"><b>UrlPaging="True" UrlPageSizeName="page size parameter name in url"</b></font></asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="desc">Properties and values to be set:<strong>UrlPaging="True" UrlPageSizeName="page size parameter name in url"</strong></asp:Content>
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="main">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="100%" CssClass="table table-bordered table-striped">
             <Columns>
@@ -14,9 +14,9 @@
         urlpaging="True" UrlPageSizeName="pagesize" UrlPageIndexName="pageindex" width="100%" LayoutType="Table" ShowNavigationToolTip="true"></webdiyer:aspnetpager>
         
         <div style="width:100%;text-align:right">
-        Page size:<a href="Default.aspx?pagesize=10">10</a>&nbsp;&nbsp;
-        <a href="Default.aspx?pagesize=20">20</a>&nbsp;&nbsp;
-        <a href="Default.aspx?pagesize=50">50</a>
+        Page size:<a href="urlpagesizename.aspx?pagesize=10">10</a>&nbsp;&nbsp;
+        <a href="urlpagesizename.aspx?pagesize=20">20</a>&nbsp;&nbsp;
+        <a href="urlpagesizename.aspx?pagesize=50">50</a>
         </div>
             
     </asp:Content>

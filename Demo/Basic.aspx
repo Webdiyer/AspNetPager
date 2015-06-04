@@ -1,6 +1,6 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Basic.aspx.cs" MetaDescription="This sample demonstrate the basic functionality of AspNetPager, help you understand how it works." Inherits="Basic_Default" MasterPageFile="AspNetPager.master" Title="AspNetPager samples-basic" %>
 
-<asp:Content runat="server" ContentPlaceHolderID="desc">In order to paging use AspNetPager,you only need to set its <font color="red"><b>RecordCount</b></font> property value and handle <font color="red"><b>PageChanged</b></font> event,you can show or bind data in this event handler¡£</p>
+<asp:Content runat="server" ContentPlaceHolderID="desc">In order to paging use AspNetPager,you only need to set its <b>RecordCount</b> property value and handle <b>PageChanged</b> event,you can show or bind data in this event handler¡£
 <p>Click paging buttons below to view paging effect:</asp:Content>
 <asp:Content runat="server" ID="content1" ContentPlaceHolderID="main">
 <p><asp:Label runat="server" ID="label1" ForeColor="red" EnableViewState="false"></asp:Label>

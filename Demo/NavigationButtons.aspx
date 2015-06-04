@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="main" Runat="Server">
 <div>Show or hide paging elements:
 </div><br />
-    <webdiyer:aspnetpager id="AspNetPager1" runat="server" RecordCount="288"
+    <webdiyer:aspnetpager id="AspNetPager1" runat="server" RecordCount="288" CssClass="pagination" LayoutType="Ul" PagingButtonLayoutType="UnorderedList" PagingButtonSpacing="0" CurrentPageButtonClass="active"
     Width="100%"></webdiyer:aspnetpager>
     <p>Properties:</p>
     <asp:CheckBox ID="ck_disbtn" runat="server" Checked="True" Text="ShowDisabledButtons" AutoPostBack="True" /><br />

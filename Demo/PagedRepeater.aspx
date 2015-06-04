@@ -1,4 +1,4 @@
-<%@ Page Language="C#" Theme="Classic" AutoEventWireup="true"  CodeFile="PagedRepeater.aspx.cs" MetaDescription="This sample demonstrate how to use AspNetPager control to add paging functionality to the Repeater control." Inherits="PagedRepeater_Default" MasterPageFile="AspNetPager.master"%>
+<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="PagedRepeater.aspx.cs" MetaDescription="This sample demonstrate how to use AspNetPager control to add paging functionality to the Repeater control." Inherits="PagedRepeater_Default" MasterPageFile="AspNetPager.master"%>
 
 <asp:Content runat="server" ContentPlaceHolderID="main">
     <webdiyer:AspNetPager ID="AspNetPager1" runat="server" Width="100%" UrlPaging="true" ShowPageIndexBox="Always" PageIndexBoxType="DropDownList" TextBeforePageIndexBox="Go To Page: " HorizontalAlign="right" PageSize="12" OnPageChanged="AspNetPager1_PageChanged" EnableTheming="true">

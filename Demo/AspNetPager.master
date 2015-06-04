@@ -3,10 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
-    <style type="text/css">
-    body,div,td{font-size:14px;}
-    ul li{margin:5px 0}
-    </style>
     <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>AspNetPager£¬the final solution for asp.net paging</title>
     <meta name="author" content="webdiyer (en.webdiyer.com)" />

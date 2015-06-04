@@ -1,11 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="AspNetPager.master" MetaDescription="This sample demonstrate how to apply styles to AspNetPager control." AutoEventWireup="true" CodeFile="ApplyStyles.aspx.cs" Inherits="Styles1_Default" %>
 
-<asp:Content runat="server" ContentPlaceHolderID="header">
-    <style type="text/css">
-        .pagination a[disabled]{  color: #777;cursor: not-allowed;background-color: #fff;border-color: #ddd;}
-        .pagination span.active{z-index: 2;color: #fff;cursor: default;background-color: #337ab7;border-color: #337ab7;}
-    </style>
-</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" Runat="Server">
     
    <h4>Bootstrap pagination:</h4>

@@ -1,4 +1,5 @@
-﻿/*style 1*/
+﻿body,div,td{font-size:14px;}
+/*style 1*/
 .anpager .cpb {background:#1F3A87 none repeat scroll 0 0;border:1px solid #CCCCCC;color:#FFFFFF;font-weight:bold;margin:5px 4px 0 0;padding:4px 5px 0;}
 .anpager a {background:#FFFFFF none repeat scroll 0 0;border:1px solid #CCCCCC;color:#1F3A87;margin:5px 4px 0 0;padding:4px 5px 0;text-decoration:none}
 .anpager a:hover{background:#1F3A87 none repeat scroll 0 0;border:1px solid #1F3A87;color:#FFFFFF;}
@@ -15,6 +16,10 @@
 .pages a, .pages .cpb { text-decoration:none;float: left; padding: 0 5px; border: 1px solid #ddd;background: #ffff;margin:0 2px; font-size:11px; color:#000;}
 .pages a:hover { background-color: #E61636; color:#fff;border:1px solid #E61636; text-decoration:none;}
 .pages .cpb { font-weight: bold; color: #fff; background: #E61636; border:1px solid #E61636;}
+
+/*bootstrap*/
+.pagination a[disabled]{  color: #777;cursor: not-allowed;background-color: #fff;border-color: #ddd;}
+.pagination span.active{z-index: 2;color: #fff;cursor: default;background-color: #337ab7;border-color: #337ab7;}
 
 .code{font-weight:bold;color:blue}
 

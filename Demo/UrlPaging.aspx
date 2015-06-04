@@ -1,6 +1,6 @@
 <%@ Page Language="C#" AutoEventWireup="true" MetaDescription="This sample demonstrate how to enable url paging mode instead of default PostBack paging." CodeFile="UrlPaging.aspx.cs" Inherits="UrlPaging_Default" MasterPageFile="AspNetPager.master" Title="AspNetPager samples¡ªUrl paging"%>
 
-<asp:Content runat="server" ContentPlaceHolderID="desc">Property and value to be set:<font color="red"><b>UrlPaging="true"</b></font>
+<asp:Content runat="server" ContentPlaceHolderID="desc">Property and value to be set:<b>UrlPaging="true"</b>
  </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="main">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="100%" CssClass="table table-bordered table-striped">

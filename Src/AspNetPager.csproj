@@ -27,7 +27,7 @@
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
     <OldToolsVersion>3.5</OldToolsVersion>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
@@ -146,9 +146,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AspNetPager.zh-CHS.resx">
       <DependentUpon>aspnetpager.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="AspNetPager.zh-CHT.resx">
       <DependentUpon>aspnetpager.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Designer\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
